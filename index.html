@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="estilo/style.css">
+
+</head>
+<body>
+
+    <div class="caixa-video-mario">
+        <video src="video.mp4" type="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+
+   <div class="caixa-principal">
+       <img src="logo.png" class="logomario" alt="logo do super mario">
+       <p>Encanadores Mario e Luigi - Resolvendo Seus Problemas com Estilo!</p>
+       <p>Você já se encontrou em uma situação de emergência com encanamento?
+        Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, estamos aqui para salvar seu dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+       <button onclick="cliqueiNoBotao()">Fale conosco</button>
+   </div>
+
+   <img src="mario.png" class="imagem-mario-luigi" alt="logo mario e luigi">
+
+   <form class="fale-conosco" action="https://formsubmit.co/caroline_delay@hotmail.com" method="POST">
+    
+    <input placeholder="Nome completo" type="text" name="nome" >
+    <input placeholder="Email" type="email" name="email">
+    <textarea placeholder="Digite sua dúvida aqui" name="info"></textarea>
+    <button onclick="sumirFormulario()">Enviar</button>
+   </form>
+
+   <div class="mascara-form"></div>
+</body>
+<script>
+
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+    console.log(formulario)
+
+    function cliqueiNoBotao(){
+        formulario.style.left = "700px"
+    }
+
+    function sumirFormulario(){
+        formulario.style.left = "700px"
+    }
+
+</script>
+</html>
